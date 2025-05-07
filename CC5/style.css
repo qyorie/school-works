@@ -1,0 +1,54 @@
+body {
+   font-family: Arial, sans-serif;
+}
+
+.sidebar {
+   width: 200px;
+   min-height: 100vh;
+   background-color: #dc3545; /* red background */
+   padding: 20px;
+}
+
+.sidebar .logo {
+   text-align: center;
+   margin-bottom: 2rem;
+}
+
+.sidebar .logo img {
+   width: 100px;
+   height: auto;
+}
+
+.sidebar .logo h5 {
+   margin-top: 10px;
+   font-weight: bold;
+   color: #fff;
+}
+
+.content {
+   margin-left: 30px;
+   padding: 40px 30px;
+}
+
+.nav-link {
+   color: #fff;
+   padding: 10px 15px;
+   border-radius: 8px;
+   margin-bottom: 10px;
+   transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-link.active {
+   background-color: #fff;
+   color: #dc3545 !important;
+   font-weight: bold;
+}
+
+.table th,
+.table td {
+   vertical-align: middle;
+}
