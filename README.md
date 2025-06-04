@@ -8,7 +8,8 @@ serves as a record of my progress and a way to track the development of my progr
 skills throughout my college journey.
 
 ## LEGEND
-👤 Solo\👥 Group
+👤 Solo\
+👥 Group
 
 # 2nd Year Projects
 - CC5👥 - A laundry tracking website we built together with my classmates as our group project. 
