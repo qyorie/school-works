@@ -1,11 +1,15 @@
-Date: March 27, 2025
+Date Created: March 27, 2025
+Date Modified: June 4, 2025
 
 # Introduction
-I created this repository to document all the projects that I 
-(or we, if I am working on a group project) have completed throughout 
-my college years at Partido State University. This will help me 
-track my programming skills throughout my journey.
+I created this repository to document all the projects I’ve completed during my 
+time at Partido State University—whether individually or as part of a group. It 
+serves as a record of my progress and a way to track the development of my programming 
+skills throughout my college journey.
+
+## LEGEND
+👤 Solo Project 👥 Group Project
 
 # 2nd Year Projects
-- CC5 - A laundry tracking website we built together with my classmates as our class project.
-- CSP3 - I program a Genetic Algorithm to solve Vertex Cover Problem.
+- CC5👥 - A laundry tracking website we built together with my classmates as our group project. 
+- CSP3👤 - I program a Genetic Algorithm to solve [Vertex Cover Problem](https://en.wikipedia.org/wiki/Vertex_cover) using Python. 
