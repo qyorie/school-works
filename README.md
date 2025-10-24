@@ -15,5 +15,5 @@ skills throughout my college journey.
 - 👥 CC5 - A laundry tracking website we built together with my classmates as our group project. 
 - 👤 CSP3 - I program a Genetic Algorithm to solve [Vertex Cover Problem](https://en.wikipedia.org/wiki/Vertex_cover) using Python. 
 
-# 2nd Year Projects/Activities
+# 3rd Year Projects/Activities
 - 👤 CSP4 - Data science
