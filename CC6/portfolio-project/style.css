@@ -495,7 +495,7 @@ footer {
 
 
 @media (max-width: 768px) {
-
+    
     /* Navbar */
     .navbar {
         background: rgba(11, 12, 16, 0.6); 
@@ -598,6 +598,9 @@ footer {
     }
 
     /* Contact Section */
+    .section-title {
+        text-align: center;
+    }
     .contact-container {
         flex-direction: column;
         gap: 20px;
