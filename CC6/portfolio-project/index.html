@@ -12,6 +12,7 @@
     <title> [ TJ ]</title>
 </head>
 <body>
+    <!-- Navbar Section -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="logo"><a href="#home">[ TJ ]</a></div>
@@ -20,9 +21,16 @@
                 <li><strong><a href="#about">ABOUT</a></strong></li>
                 <li><strong><a href="#contact">CONTACT</a></strong></li>
             </ul>
-            <button><img src="assets/img/dl-logo.png">Resume</button>
+            <a 
+                href="https://docs.google.com/document/d/1WicV-uUysNS7kf1HtFe2wTV4eyE3D9te7sxp7rxVpck/edit?usp=drive_link"
+                style="text-decoration: none;"
+                target="_blank"
+            >
+                <button class="btn btn-2">Resume</button>
+            </a>
         </div>
     </nav>
+    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container hero-container">
             <div class="hero-info">
@@ -30,19 +38,20 @@
                 <p class="hero-name">I’m Troy Tristan Jacob</p>
                 <h1 class="hero-title">SOFTWARE ENGINEER</h1>
                 <p class="hero-description">Building scalable, efficient, and elegant solutions that power modern web and mobile applications. Ready to bring your ideas to life.</p>
-                <button class="btn-1">Partner with me</button>
+                <button class="btn btn-1">Partner with me</button>
             </div>
             <div class="hero-image">
                 <img src="./assets/img/me.png" alt="Hero Image">
                 <div class="contact-links">
                     <li><a href="https://www.facebook.com/profile.php?id=100091084700258" target="_blank"><img src="assets/img/fb.png"></a></li>
-                    <li><a href="#" target="_blank"><img src="assets/img/in.png"></a></li>
-                    <li><a href="#" target="_blank"><img src="assets/img/x.png"></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank"><img src="assets/img/in.png"></a></li>
+                    <li><a href="https://x.com/" target="_blank"><img src="assets/img/x.png"></a></li>
                     <li><a href="https://github.com/qyorie" target="_blank"><img src="assets/img/git-white.png"></a></li>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Tools & Technologies Section -->
     <section class="tools-tech">
         <div class="tools-tech-content">
             <div class="tools-stream">
@@ -50,8 +59,7 @@
                 <img src="assets/img/react.png" alt="react">
                 <img src="assets/img/nodejs.png" alt="nodejs">
                 <img src="assets/img/python.png" alt="python">
-                <img src="assets/img/docker.png" alt="docker">
-                <img src="assets/img/aws.png" alt="aws">
+                <img src="assets/img/postgresql.png" alt="postgresql">
                 <img src="assets/img/git.png" alt="git">
                 <img src="assets/img/mongodb.png" alt="mongodb">
                 <img src="assets/img/mysql.png" alt="mysql">
@@ -64,8 +72,7 @@
                 <img src="assets/img/react.png" alt="react">
                 <img src="assets/img/nodejs.png" alt="nodejs">
                 <img src="assets/img/python.png" alt="python">
-                <img src="assets/img/docker.png" alt="docker">
-                <img src="assets/img/aws.png" alt="aws">
+                <img src="assets/img/postgresql.png" alt="postgresql">
                 <img src="assets/img/git.png" alt="git">
                 <img src="assets/img/mongodb.png" alt="mongodb">
                 <img src="assets/img/mysql.png" alt="mysql">
@@ -75,60 +82,112 @@
             </div>
         </div>
     </section>
-    <section class="portfolio py-5" id="portfolio">
+    <!-- Portfolio Section -->
+    <section class="portfolio py-6" id="portfolio">
         <div class="container">
             <h2 class="section-title">PORTFOLIO</h2>
+
             <div class="projects">
-                <div class="card">
-                    <div class="card-content">
-                        <img src="assets/img/project-1.png" alt="Sample Image" />
-                        <div class="card-details-wrapper">
+                <!-- Project 1 -->
+                <article class="card">
+                    <figure class="card-content">
+                        <img src="assets/img/project-1.png" alt="Weather App Screenshot" />
+                        <figcaption class="card-details-wrapper">
                             <div class="card-details secondary-bg">
                                 <h3 class="card-title">WEATHER APP</h3>
-                                <p>a responsive weather web app using vanilla JavaScript, HTML, and CSS to 
-                                    display real-time forecasts with location-based search functionality via a weather API.
+                                <p>
+                                    A responsive weather web app using vanilla JavaScript, HTML, and CSS to display 
+                                    real-time forecasts with location-based search functionality via a weather API.
                                 </p>
-                                <a href="https://github.com/qyorie/school-works" target="_blank">
-                                    <button class="btn-1">View</button>
+                                <a href="https://github.com/qyorie/school-works" target="_blank" rel="noopener noreferrer">
+                                    <button class="btn btn-1">View</button>
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <img src="assets/img/project-2.png" alt="Sample Image" />
-                        <div class="card-details-wrapper">
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="card">
+                    <figure class="card-content">
+                        <img src="assets/img/project-2.png" alt="Laundry Tracking App Screenshot" />
+                        <figcaption class="card-details-wrapper">
                             <div class="card-details primary-bg">
                                 <h3 class="card-title">LAUNDRY TRACKING</h3>
-                                <p>web-based platform to track laundry pickup, washing, drying, delivery status, 
+                                <p>
+                                    Web-based platform to track laundry pickup, washing, drying, delivery status, 
                                     and customer orders — ideal for laundromats or delivery laundry services.
                                 </p>
-                                <a href="https://github.com/qyorie/school-works" target="_blank">
-                                    <button class="btn-1">View</button>
+                                <a href="https://github.com/qyorie/school-works/tree/main/CC5" target="_blank" rel="noopener noreferrer">
+                                    <button class="btn btn-1">View</button>
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <img src="assets/img/project-3.png" alt="Sample Image" />
-                        <div class="card-details-wrapper">
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="card">
+                    <figure class="card-content">
+                        <img src="assets/img/project-3.png" alt="InsightBoard Screenshot" />
+                        <figcaption class="card-details-wrapper">
                             <div class="card-details secondary-bg">
                                 <h3 class="card-title">INSIGHTBOARD</h3>
-                                <p>Monitor key metrics with custom charts, real-time updates, and report exports.</p>
-                                <a href="https://github.com/qyorie/school-works" target="_blank">
-                                    <button class="btn-1">View</button>
+                                <p>
+                                    Monitor key metrics with custom charts, real-time updates, and report exports.
+                                </p>
+                                <a href="https://github.com/qyorie/school-works" target="_blank" rel="noopener noreferrer">
+                                    <button class="btn btn-1">View</button>
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="card">
+                    <figure class="card-content">
+                        <img src="assets/img/project-4.png" alt="Laundry Tracking App Screenshot" />
+                        <figcaption class="card-details-wrapper">
+                            <div class="card-details primary-bg">
+                                <h3 class="card-title">DATA ANALYTIC (PYTHON)</h3>
+                                <p>
+                                    Data Analytics is the process of collecting, organizing and studying data to find useful 
+                                    information understand what’s happening and make better decisions.
+                                </p>
+                                <a href="https://github.com/qyorie/school-works/tree/main/CSP4/project-data-science" target="_blank" rel="noopener noreferrer">
+                                    <button class="btn btn-1">View</button>
+                                </a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="card">
+                    <figure class="card-content">
+                        <img src="assets/img/project-5.png" alt="InsightBoard Screenshot" />
+                        <figcaption class="card-details-wrapper">
+                            <div class="card-details secondary-bg">
+                                <h3 class="card-title">GENETIC ALGORITHM</h3>
+                                <p>
+                                    A genetic algorithm is a search and optimization method inspired by natural selection to 
+                                    find optimal solutions to complex problems.
+                                </p>
+                                <a href="https://github.com/qyorie/school-works/tree/main/CSP3" target="_blank" rel="noopener noreferrer">
+                                    <button class="btn btn-1">View</button>
+                                </a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </article>
+
             </div>
         </div>
     </section>
-    <section class="about py-5" id="about">
+
+    <!-- About Section -->
+    <section class="about py-6" id="about">
         <div class="about-content container">
             <img src="assets/img/about-img.png" alt="About Image" />
             <div class="about-info">
@@ -142,13 +201,18 @@
             </div>
         </div>
     </section>
-    <section class="contact py-5" id="contact">
-        <h2 class="section-title container">Contact</h2>
-        <div class="contact-container container">
+    <!-- Contact Section -->
+    <section class="contact py-6" id="contact">
+        <h2 class="section-title container">CONTACT</h2>
+        <div class="contact-container container fs-2">
             <div class="contact-message-wrapper">
                 <div class="contact-message">
-                    <p>Let's work together</p>
-                    <p>I'm always excited to collaborate on new projects or opportunities. Feel free to reach out via email or connect with me on social media!</p>
+                    <p class="bold">Let's work together!</p>
+                    <p>
+                        I'm always excited to collaborate on new projects or opportunities. 
+                        Feel free to reach out via email or connect with me on social media!
+                        <br><br>
+                    </p>
                     <div class="contact-info">
                         <p>Email: troy@gmail.com</p>
                         <p>GitHub: github.com/troy</p>
@@ -157,22 +221,23 @@
                 </div>
             </div>
             <div class="contact-form-wrapper">
-                <div class="contact-form">
+                <form id="contact-form" class="contact-form">
                     <h3>Send me a message</h3>
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <textarea placeholder="Message"></textarea>
-                    <button class="btn-1">Send Message</button>
-                </div>
+                    <input type="text" name="user_name" placeholder="Name" required />
+                    <input type="email" name="user_email" placeholder="Email" required />
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn btn-1">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
+    <!-- Footer Section -->
     <footer>
         <div class="footer-content container">
             <div class="contact-links">
                 <li><a href="https://www.facebook.com/profile.php?id=100091084700258" target="_blank"><img src="assets/img/fb.png"></a></li>
-                <li><a href="#" target="_blank"><img src="assets/img/in.png"></a></li>
-                <li><a href="#" target="_blank"><img src="assets/img/x.png"></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><img src="assets/img/in.png"></a></li>
+                <li><a href="https://x.com/" target="_blank"><img src="assets/img/x.png"></a></li>
                 <li><a href="https://github.com/qyorie" target="_blank"><img src="assets/img/git-white.png"></a></li>
             </div>
             <p>&copy; 2024 Troy Tristan Jacob. All rights reserved.</p>
