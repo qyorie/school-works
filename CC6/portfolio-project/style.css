@@ -518,6 +518,7 @@ footer {
         top: 90px;
         width: 100%;
         left: -100%;
+        padding: 25px 0;
         background: black; 
         text-align: center;
         transition: 0.3s;
@@ -529,6 +530,7 @@ footer {
         flex-direction: column;
         gap: 10px;
         width: 100%;
+        
     }
     nav .nav-links li a {
         font-size: 1.4rem;
