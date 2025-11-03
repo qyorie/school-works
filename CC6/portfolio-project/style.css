@@ -508,7 +508,7 @@ footer {
         display: flex;
     }
     .nav-container {
-        align-items: flex-start;
+        align-items: center;
         padding: 10px 20px;
     }
     
