@@ -63,6 +63,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* Utility Classes */
+.hide {
+    display:none;
+}
 .fs-1 {
     font-size: 1rem;
 }
@@ -173,7 +176,24 @@ p, h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   align-items: center;
 }
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
 
+.burger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-white);
+    border-radius: 2px;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 nav .logo a {
     font-size: 2.4rem;
     font-weight: bold;
@@ -469,4 +489,123 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        background: rgba(11, 12, 16, 0.6); 
+        backdrop-filter: blur(10px);        
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        transition: background 0.4s ease, backdrop-filter 0.4s ease;
+    }
+    .burger {
+        display: flex;
+    }
+    .nav-container {
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+    
+    .nav-menu{
+        position:fixed;
+        flex-direction: column;
+        top: 90px;
+        width: 100%;
+        left: -100%;
+        background: black; 
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-menu.active{
+        left: -0.1%;
+    }
+    nav .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    nav .nav-links li a {
+        font-size: 1.4rem;
+    }
+
+    /* Hero Section */
+    .hero-container {
+        flex-direction: column;
+        padding: 5% 5%;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-info {
+        margin-right: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+    .hero-image {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-top: 20px;
+    }
+    .hero-title {
+        font-size: 3rem;
+    }
+    .hero-description {
+        font-size: 1.8rem;
+    }
+    .hero-info button {
+        font-size: 1.8rem;
+        padding: 1rem 1.5rem;
+    }
+
+    /* About Section */
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .about-info {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .about img {
+        display: none;
+    }
+
+    /* Portfolio / Projects */
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    /* Tools Section */
+    .tools-tech h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    .tools-stream img {
+        width: 30px;
+        height: 30px;
+        gap: 50px;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact-form-wrapper, .contact-message-wrapper {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
 }
