@@ -1,0 +1,281 @@
+/* CSS Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-family: 'Roboto';
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+:root {
+  /* ===== Brand Colors ===== */
+  --color-primary: #FF6B01;      /* Main brand color (blue) */
+  --color-secondary: #008080;    /* Supporting neutral */
+  --color-secondary-dark: #002F2F; /* Lighter shade of secondary */
+  --color-accent: #66fcf1;       /* Highlight or accent color */
+  --color-success: #28a745;
+  --color-warning: #ffc107;
+  --color-danger: #dc3545;
+  --color-info: #17a2b8;
+
+  /* ===== Neutral Shades ===== */
+  --color-white: #ffffff;
+  --color-light: #f8f9fa;
+  --color-gray: #adb5bd;
+  --color-dark: #212529;
+  --color-black: #000000;
+
+  /* ===== Text Colors ===== */
+  --text-primary: var(--color-dark);
+  --text-secondary: var(--color-gray);
+  --text-inverse: var(--color-white);
+
+    /* ===== Background Colors ===== */
+    --color-bg: #1B3C53;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+.section-title {
+    font-family: 'roboto flex';
+    font-size: 3rem;
+    font-weight: 1000;
+    margin-bottom: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background: transparent;
+  padding: 20px 0;
+  transition: 0.4s ease, 0.4s ease;
+}
+
+.nav-container {
+  max-width: 1200px;       
+  margin: 0 auto;          
+  padding: 0 40px;         
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo a {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+nav .logo a:hover {
+    color: var(--color-primary);
+    transition: color 0.3s;
+}
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav .nav-links li a {
+    text-decoration: none;
+    color:var(--color-white);
+    font-size: 1.6rem;
+    transition: color 0.3s;
+}
+nav .nav-links li a:hover {
+    color: var(--color-primary);
+}
+
+nav button {
+    display: flex;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+nav img {
+    width: 10px;
+    height: 20px;
+    margin-right: 10px;
+}
+nav button:hover {
+    background-color: rgba(var(--color-primary), 0.9);
+}
+
+.navbar.scrolled {
+    background: rgba(11, 12, 16, 0.6); 
+    backdrop-filter: blur(10px);        
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.4s ease, backdrop-filter 0.4s ease;
+    
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    align-items: flex-end; 
+    position: relative;
+    padding-top: 80px;
+    background-image: url('./assets/img/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-container {
+    color: var(--color-white);
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: space-between;
+    padding: 9% 5%;
+    width: 100%;
+}
+.hero-info{
+    max-width: 600px;
+    margin-right: 80px;
+    text-align: justify;
+    font-family: 'roboto flex';
+}
+.hero-greeting {
+    font-family: 'Roboto';
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+.hero-name {
+    font-size: 2.5rem;
+    font-weight: 1000;
+}
+.hero-title {
+    font-size: 4.8rem;
+    margin-top: 0;
+    font-weight: 1000;
+    color: var(--color-primary);
+    font-family: 'Roboto Flex';
+}
+.hero-description {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero-info button {
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hero-info button:hover {
+    background-color: var(--color-secondary-dark);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+
+.hero-image {
+    width: 800px;
+    height: auto;
+}
+/* about section */
+.about {
+    padding: 20px 0;
+    background-color: var(--color-light);
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-info {
+    flex: 1;
+    margin-left: 40px;
+}
+.about-info p {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.about img {
+    width: auto;
+    height: auto;
+}
+
+/* portfolio section */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    transition: 0.2s;
+}
+
+.contact-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.contact-links a img {
+    transition: transform 0.3s;
+}
+.contact-links a img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.contact-links a img:active {
+    transform: scale(0.95);
+}
+    
+.contact-links li {
+    list-style: none;
+}
