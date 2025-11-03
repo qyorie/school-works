@@ -15,6 +15,7 @@ body {
     line-height: 1.5;
     font-size: 1.6rem;
     font-family: 'Roboto';
+    background-color: var(--color-light);
 }
 
 img, picture, video, canvas, svg {
@@ -61,10 +62,11 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
+/* Utility Classes */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 0 40px;
 }
 .section-title {
     font-family: 'roboto flex';
@@ -72,6 +74,52 @@ p, h1, h2, h3, h4, h5, h6 {
     font-weight: 1000;
     margin-bottom: 20px;
 }
+.primary-bg {
+    background-color: var(--color-primary);
+}
+.secondary-bg {
+    background-color: var(--color-bg);
+}
+.py-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.py-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.py-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.py-4 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.py-5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+/* Button Styles */
+.btn-1 {
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+.btn-1:hover {
+    background-color: var(--color-secondary-dark);
+    transform: scale(1.05);
+}
+
+.btn-1:active {
+    transform: scale(0.95);
+}
+
 
 /* Navbar Styles */
 .navbar {
@@ -146,7 +194,58 @@ nav button:hover {
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     transition: background 0.4s ease, backdrop-filter 0.4s ease;
-    
+}
+
+/* tools section */
+.tools-tech {
+  text-align: center;
+  padding: 20px 0;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--color-gray);
+}
+
+.tools-tech h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+
+/* The moving stream */
+.tools-stream {
+  display: inline-flex;
+  gap: 100px;
+  align-items: center;
+  animation: riverFlow 25s linear infinite;
+}
+
+/* Icon styles */
+.tools-stream img {
+  filter: grayscale(80%);
+  opacity: 0.9;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.tools-stream img:hover {
+  transform: scale(1.2);
+  filter: grayscale(0%) drop-shadow(0 0 10px #66fcf1);
+  opacity: 1;
+}
+
+.tools-tech-content:hover .tools-stream {
+  animation-play-state: paused;
+}
+
+/* River Flow Animation */
+@keyframes riverFlow {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
 
 /* Hero Section Styles */
@@ -179,9 +278,8 @@ nav button:hover {
     font-size: 2rem;
     font-weight: 1000;
 }
-
 .hero-name {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 1000;
 }
 .hero-title {
@@ -192,38 +290,23 @@ nav button:hover {
     font-family: 'Roboto Flex';
 }
 .hero-description {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 20px;
 }
-
-.hero-info button {
-    font-size: 2rem;
-    padding: 1rem 1.5rem;
-    background-color: var(--color-secondary);
-    color: var(--color-white);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.hero-info button:hover {
-    background-color: var(--color-secondary-dark);
-}
-
-button:active {
-  transform: scale(0.95);
-}
-
-
 .hero-image {
     width: 800px;
     height: auto;
 }
+.hero-info button {
+    font-size: 2rem;
+    padding: 1.2rem 2rem;
+    align-self: flex-start;
+}
+
 /* about section */
 .about {
     padding: 20px 0;
-    background-color: var(--color-light);
 }
 
 .about-content {
@@ -241,7 +324,7 @@ button:active {
     text-align: justify;
 }
 .about img {
-    width: auto;
+    width: 400px;
     height: auto;
 }
 
@@ -255,11 +338,37 @@ button:active {
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 16px;
-    background-color: #fff;
     transition: 0.2s;
 }
+.card-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    height: 100%;
+}
+.card-details-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: var(--color-light);
+}
+.card-details {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    flex-grow: 1;
+    height: 100%;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
+.card-button{
+}
+
+/* contact section */
 .contact-links {
     display: flex;
     gap: 15px;
@@ -278,4 +387,21 @@ button:active {
     
 .contact-links li {
     list-style: none;
+}
+
+footer {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    text-align: center;
+    padding: 5rem 0;
+    font-size: 1.4rem;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }

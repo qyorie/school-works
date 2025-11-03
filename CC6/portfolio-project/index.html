@@ -16,8 +16,8 @@
         <div class="nav-container">
             <div class="logo"><a href="#home">[ TJ ]</a></div>
             <ul class="nav-links">
-                <li><strong><a href="#about">ABOUT</a></strong></li>
                 <li><strong><a href="#portfolio">PORTFOLIO</a></strong></li>
+                <li><strong><a href="#about">ABOUT</a></strong></li>
                 <li><strong><a href="#contact">CONTACT</a></strong></li>
             </ul>
             <button><img src="assets/img/dl-logo.png">Resume</button>
@@ -30,20 +30,105 @@
                 <p class="hero-name">I’m Troy Tristan Jacob</p>
                 <h1 class="hero-title">SOFTWARE ENGINEER</h1>
                 <p class="hero-description">Building scalable, efficient, and elegant solutions that power modern web and mobile applications. Ready to bring your ideas to life.</p>
-                <button>Partner with me</button>
+                <button class="btn-1">Partner with me</button>
             </div>
             <div class="hero-image">
                 <img src="./assets/img/me.png" alt="Hero Image">
                 <div class="contact-links">
-                    <li><a href="#"><img src="assets/img/fb.png"></a></li>
-                    <li><a href="#"><img src="assets/img/in.png"></a></li>
-                    <li><a href="#"><img src="assets/img/x.png"></a></li>
-                    <li><a href="#"><img src="assets/img/git.png"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100091084700258" target="_blank"><img src="assets/img/fb.png"></a></li>
+                    <li><a href="#" target="_blank"><img src="assets/img/in.png"></a></li>
+                    <li><a href="#" target="_blank"><img src="assets/img/x.png"></a></li>
+                    <li><a href="https://github.com/qyorie" target="_blank"><img src="assets/img/git-white.png"></a></li>
                 </div>
             </div>
         </div>
     </section>
-    <section class="about" id="about">
+    <section class="tools-tech">
+        <div class="tools-tech-content">
+            <div class="tools-stream">
+                <img src="assets/img/c++.png" alt="c++">
+                <img src="assets/img/react.png" alt="react">
+                <img src="assets/img/nodejs.png" alt="nodejs">
+                <img src="assets/img/python.png" alt="python">
+                <img src="assets/img/docker.png" alt="docker">
+                <img src="assets/img/aws.png" alt="aws">
+                <img src="assets/img/git.png" alt="git">
+                <img src="assets/img/mongodb.png" alt="mongodb">
+                <img src="assets/img/mysql.png" alt="mysql">
+                <img src="assets/img/html5.png" alt="html">
+                <img src="assets/img/css3.png" alt="css">
+                <img src="assets/img/js.png" alt="js">
+
+                <!-- Duplicate icons for seamless looping -->
+                <img src="assets/img/c++.png" alt="c++">
+                <img src="assets/img/react.png" alt="react">
+                <img src="assets/img/nodejs.png" alt="nodejs">
+                <img src="assets/img/python.png" alt="python">
+                <img src="assets/img/docker.png" alt="docker">
+                <img src="assets/img/aws.png" alt="aws">
+                <img src="assets/img/git.png" alt="git">
+                <img src="assets/img/mongodb.png" alt="mongodb">
+                <img src="assets/img/mysql.png" alt="mysql">
+                <img src="assets/img/html5.png" alt="html">
+                <img src="assets/img/css3.png" alt="css">
+                <img src="assets/img/js.png" alt="js">
+            </div>
+        </div>
+    </section>
+    <section class="portfolio py-5" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">PORTFOLIO</h2>
+            <div class="projects">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="assets/img/project-1.png" alt="Sample Image" />
+                        <div class="card-details-wrapper">
+                            <div class="card-details secondary-bg">
+                                <h3 class="card-title">WEATHER APP</h3>
+                                <p>a responsive weather web app using vanilla JavaScript, HTML, and CSS to 
+                                    display real-time forecasts with location-based search functionality via a weather API.
+                                </p>
+                                <a href="https://github.com/qyorie/school-works" target="_blank">
+                                    <button class="btn-1">View</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="assets/img/project-2.png" alt="Sample Image" />
+                        <div class="card-details-wrapper">
+                            <div class="card-details primary-bg">
+                                <h3 class="card-title">LAUNDRY TRACKING</h3>
+                                <p>web-based platform to track laundry pickup, washing, drying, delivery status, 
+                                    and customer orders — ideal for laundromats or delivery laundry services.
+                                </p>
+                                <a href="https://github.com/qyorie/school-works" target="_blank">
+                                    <button class="btn-1">View</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="assets/img/project-3.png" alt="Sample Image" />
+                        <div class="card-details-wrapper">
+                            <div class="card-details secondary-bg">
+                                <h3 class="card-title">INSIGHTBOARD</h3>
+                                <p>Monitor key metrics with custom charts, real-time updates, and report exports.</p>
+                                <a href="https://github.com/qyorie/school-works" target="_blank">
+                                    <button class="btn-1">View</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about py-5" id="about">
         <div class="about-content container">
             <img src="assets/img/about-img.png" alt="About Image" />
             <div class="about-info">
@@ -57,83 +142,42 @@
             </div>
         </div>
     </section>
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <h2 class="section-title">PORTFOLIO</h2>
-            <div class="projects">
-                <div class="card">
-                    <img src="assets/img/project-1.png" alt="Sample Image" />
-                    <div class="card-content">
-                        <h3>WEATHER APP</h3>
-                        <p>a responsive weather web app using vanilla JavaScript, HTML, and CSS to 
-                            display real-time forecasts with location-based search functionality via a weather API.
-                        </p>
-                        <button>View</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets/img/project-2.png" alt="Sample Image" />
-                    <div class="card-content">
-                        <h3>LAUNDRY TRACKING</h3>
-                        <p>web-based platform to track laundry pickup, washing, drying, delivery status, 
-                            and customer orders — ideal for laundromats or delivery laundry services.
-                        </p>
-                        <button>View</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets/img/project-3.png" alt="Sample Image" />
-                    <div class="card-content">
-                        <h3>INSIGHTBOARD</h3>
-                        <p>Monitor key metrics with custom charts, real-time updates, and report exports.</p>
-                        <button>View</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="tools-tech">
-        <div class="tools-tech-content container">
-            <h2 class="section-title">Tools & Technologies</h2>
-            <div class="tools-list">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>JavaScript</span>
-                <span>React</span>
-                <span>Node.js</span>
-                <span>Python</span>
-                <span>Django</span>
-                <span>Git</span>
-                <span>Docker</span>
-            </div>
-        </div>
-    </section>
-    <section class="contact" id="contact">
+    <section class="contact py-5" id="contact">
+        <h2 class="section-title container">Contact</h2>
         <div class="contact-container container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-message">
-                <p>Let's work together</p>
-                <p>I'm always excited to collaborate on new projects or opportunities. Feel free to reach out via email or connect with me on social media!</p>
+            <div class="contact-message-wrapper">
+                <div class="contact-message">
+                    <p>Let's work together</p>
+                    <p>I'm always excited to collaborate on new projects or opportunities. Feel free to reach out via email or connect with me on social media!</p>
+                    <div class="contact-info">
+                        <p>Email: troy@gmail.com</p>
+                        <p>GitHub: github.com/troy</p>
+                        <p>Contact: 09123456789</p>
+                    </div>
+                </div>
             </div>
-            <div class="contact-info">
-                Email: troy@gmail.com
-                GitHub: github.com/troy
-                Contact: 09123456789
+            <div class="contact-form-wrapper">
+                <div class="contact-form">
+                    <h3>Send me a message</h3>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <textarea placeholder="Message"></textarea>
+                    <button class="btn-1">Send Message</button>
+                </div>
             </div>
         </div>
     </section>
     <footer>
-        <div class="container">
+        <div class="footer-content container">
             <div class="contact-links">
-                <li><a href="#"><img src="assets/img/fb.png"></a></li>
-                <li><a href="#"><img src="assets/img/in.png"></a></li>
-                <li><a href="#"><img src="assets/img/x.png"></a></li>
-                <li><a href="#"><img src="assets/img/git.png"></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100091084700258" target="_blank"><img src="assets/img/fb.png"></a></li>
+                <li><a href="#" target="_blank"><img src="assets/img/in.png"></a></li>
+                <li><a href="#" target="_blank"><img src="assets/img/x.png"></a></li>
+                <li><a href="https://github.com/qyorie" target="_blank"><img src="assets/img/git-white.png"></a></li>
             </div>
             <p>&copy; 2024 Troy Tristan Jacob. All rights reserved.</p>
         </div>
     </footer>
-    
     <script src="script.js"></script>
 </body>
 </html>
