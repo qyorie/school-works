@@ -1,5 +1,5 @@
 Date Created: March 27, 2025\
-Date Last Modified: October 24, 2025
+Date Last Modified: November 4, 2025
 
 # Introduction
 I created this repository to document all the projects I’ve completed during my 
@@ -17,6 +17,8 @@ skills throughout my college journey.
 
 # 3rd Year Projects/Activities
 - 👤 CSP4 - Data science
+- 👤 CSELEC1 - Multi-threading code
+- 👤 CC6 - Portfolio website
 
 # 📘 Future Plans
 I’ll continue updating this repository as I complete new projects and activities throughout my studies.
