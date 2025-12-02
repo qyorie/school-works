@@ -15,25 +15,25 @@
     <!-- Navbar Section -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="logo">
-                <a href="#home">[ TJ ]</a>
-            </div>
-
-            <div class="nav-menu" id="nav-menu">
-                <ul class="nav-links">
-                    <li><strong><a href="#portfolio">PORTFOLIO</a></strong></li>
-                    <li><strong><a href="#about">ABOUT</a></strong></li>
-                    <li><strong><a href="#contact">CONTACT</a></strong></li>
-                </ul>
-                <a 
-                    href="https://docs.google.com/document/d/1WicV-uUysNS7kf1HtFe2wTV4eyE3D9te7sxp7rxVpck/edit?usp=drive_link"
-                    style="text-decoration: none;"
-                    target="_blank"
-                >
-                    <button class="btn btn-2">Resume</button>
-                </a>
-            </div>
-            <!-- Hamburger Icon -->
+          <div class="logo">
+              <a href="#home">[ TJ ]</a>
+          </div>
+          <div class="nav-menu" id="nav-menu">
+            <ul class="nav-links">
+                <li><strong><a href="#skills">SKILLS</a></strong></li>
+                <li><strong><a href="#portfolio">PORTFOLIO</a></strong></li>
+                <li><strong><a href="#about">ABOUT</a></strong></li>
+                <li><strong><a href="#contact">CONTACT</a></strong></li>
+            </ul>
+          </div>
+          <a 
+              href="https://docs.google.com/document/d/1WicV-uUysNS7kf1HtFe2wTV4eyE3D9te7sxp7rxVpck/edit?usp=drive_link"
+              style="text-decoration: none;"
+              target="_blank"
+          >
+              <button class="btn btn-2">Resume</button>
+          </a>
+          <!-- Hamburger Icon -->
             <div class="burger" id="burger">
                 <span></span>
                 <span></span>
@@ -93,6 +93,51 @@
             </div>
         </div>
     </section>
+    <!-- Skills Section -->
+  <section class="skills py-6" id="skills">
+      <div class="container skills-container">
+          <h2 class="section-title">SKILLS</h2>
+          
+          <div class="skills-grid">
+              <!-- Languages -->
+              <div class="skill-category">
+                  <h3>Languages</h3>
+                  <div class="skill-items">
+                      <span class="skill-item">JavaScript</span>
+                      <span class="skill-item">Python</span>
+                      <span class="skill-item">C++</span>
+                      <span class="skill-item">Java</span>
+                      <span class="skill-item">SQL</span>
+                  </div>
+              </div>
+
+              <!-- Frontend -->
+              <div class="skill-category">
+                  <h3>Frontend</h3>
+                  <div class="skill-items">
+                      <span class="skill-item">React</span>
+                      <span class="skill-item">HTML5</span>
+                      <span class="skill-item">CSS3</span>
+                      <span class="skill-item">Tailwind CSS</span>
+                      <span class="skill-item">Bootstrap</span>
+                      <span class="skill-item">jQuery</span>
+                  </div>
+              </div>
+
+              <!-- Backend -->
+              <div class="skill-category">
+                  <h3>Backend</h3>
+                  <div class="skill-items">
+                      <span class="skill-item">Node.js</span>
+                      <span class="skill-item">Express</span>
+                      <span class="skill-item">MongoDB</span>
+                      <span class="skill-item">MySQL</span>
+                      <span class="skill-item">REST APIs</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
     <!-- Portfolio Section -->
     <section class="portfolio py-6" id="portfolio">
         <div class="container">
@@ -213,12 +258,11 @@
         </div>
     </section>
     <!-- Contact Section -->
-    <section class="contact py-6" id="contact">
-        <h2 class="section-title container">CONTACT</h2>
+    <section class="contact py-6 container" id="contact">
+        <h2 class="section-title">LET'S WORK TOGETHER!</h2>
         <div class="contact-container container fs-2">
             <div class="contact-message-wrapper">
                 <div class="contact-message">
-                    <p class="bold">Let's work together!</p>
                     <p>
                         I'm always excited to collaborate on new projects or opportunities. 
                         Feel free to reach out via email or connect with me on social media!
